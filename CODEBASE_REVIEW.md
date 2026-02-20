@@ -12,8 +12,8 @@ PyMongo (database connectivity)
 MongoDB (data storage)
 
 ## Architecture Summary
-### Application Structure
 
+### Application Structure
 
 Single-file application (app.py)
 
@@ -25,6 +25,23 @@ Templates used for UI rendering
 
 MongoDB collection accessed globally
 
+### Architecture Diagram
+
+Client (Browser)
+
+       |
+    
+Flask Application (Routes in app.py)
+
+       |   
+
+PyMongo Database Layer
+
+       |
+
+MongoDB Collection (todo)
+
+The current implementation combines routing and business logic within a single module, which simplifies development but limits scalability and separation of concerns.
 
 ### Flow Overview
 
